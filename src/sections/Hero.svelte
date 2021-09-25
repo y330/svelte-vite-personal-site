@@ -1,5 +1,5 @@
 <script>
-	import { Subhead, Headline, Button} from 'attractions'
+	import { Subhead, Headline, Button } from 'attractions'
 	import { configStore } from '/stores/configCopyStore'
 	import Typewriter from '../components/Typewriter/Typewriter.svelte'
 	import { ArrowDownIcon } from 'svelte-feather-icons'
@@ -21,14 +21,16 @@
 	<Subhead>
 		{headline}
 	</Subhead>
-	<Button
-		class="scroll-down"
-		round
-		filled
-		on:click={() => router.push('#summary')}
-	>
-		<ArrowDownIcon size="24" class="down-icon" />
-	</Button>
+	<a href="#summary" class="button">
+		<Button
+			class="scroll-down"
+			round
+			filled
+			on:click={() => router.push('#summary')}
+		>
+			<ArrowDownIcon size="24" class="down-icon" />
+		</Button>
+	</a>
 	<br />
 </section>
 

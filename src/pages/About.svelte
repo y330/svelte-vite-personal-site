@@ -1,17 +1,21 @@
 <script>
-	import { Divider } from "attractions"
+	import { Divider } from 'attractions'
 	// Sections
 
 	// import Skills from '../sections/Skills.svelte'
 	import Summary from '../sections/Summary.svelte'
-	import RecentProjects from "../sections/RecentProjects.svelte";
+	import RecentProjects from '../sections/RecentProjects.svelte'
 	import Hero from '../sections/Hero.svelte'
-
 </script>
 
 <container>
 	<Hero />
-	<Summary id="summary" />
+	<br>
+	<br>
+	<br>
+	<div id="summary">
+		<Summary />
+	</div>
 	<section class="row">
 		<RecentProjects />
 
