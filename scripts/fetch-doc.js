@@ -1,7 +1,7 @@
 import fs from "fs"
 import archieml from "archieml"
 import fetch from "node-fetch"
-import google from '../config.js'
+import google from '../google.config.js'
 const docs = google.docs
 
 const fetchGoogle = async ({ id, gid }) => {

@@ -14,13 +14,14 @@
 		tech: [],
 		url: '#',
 		imageUrl: '#',
+		code: '',
 	}
 	// -------- state
 	let hovered = false
 	// -------- code
 	const shadow = tweened(0, { duration: 500, easing: cubicOut })
 	const handleClick = () => {
-		window.location = project.url
+		// window.location = project.url
 	}
 	const handleMouseEnter = () => {
 		shadow.set(1)
@@ -54,10 +55,12 @@
 ;"
 		class="site dark-mode scroll__ card"
 	>
-		<H2 class="title">
-			<Typewriter interval={100}>
-				{project.title}
-			</Typewriter>
+		<H2 class="title"
+			><a class="h2" href={project.url}>
+				<Typewriter interval={100}>
+					{project.title}
+				</Typewriter>
+			</a>
 		</H2>
 		<div
 			class="description"
@@ -67,9 +70,11 @@
 		</div>
 		<img src={project.imageUrl} alt="A screenshot of {project.title}" />
 		<div class="technologies">
-			<Label>Technologies used: </Label>
+			<Label>Technologies used:</Label>
 			<Chips tags={project.tech} />
 		</div>
+		{#if project.code != ''}Source: <a href={project.code}>{project.code}</a
+			>{/if}
 	</div>
 {/if}
 
@@ -132,9 +137,13 @@
 			font-weight: 400;
 			transition-property: opacity, background-color;
 			transition-duration: 300ms ease-in-out;
-			h2 {
+			a {
+				color: theme.$main;
+
 				text-decoration: none;
 				&::after {
+					content: ' (click to view project)';
+					min-height: 9rem;
 					font-size: small;
 					transition-duration: 0.5s;
 					text-decoration: none;

@@ -35,8 +35,29 @@
 				return '#563d7c'
 			case 'NodeJS':
 				return '#339933'
-			case 'Flask':
-				return '#339933'
+			case 'SvelteKit':
+				return '#ff5500'
+			case 'Vue':
+				return '#2c3e50'
+			case 'React':
+				return '#61dafb'
+			case 'Angular':
+				return '#dd0031'
+			case 'Django':
+				return '#0c9d58'
+			case 'Flutter':
+				return '#6ecbff'
+			case 'KotlinNative':
+				return '#f18e33'
+			case 'C#':
+				return '#178600'
+			case 'CoffeeScript':
+				return '#244776'
+			case 'Haskell':
+				return '#29b544'
+			case 'Scala':
+				return '#c22d40'
+
 			default:
 				return '#aaa'
 		}
@@ -82,7 +103,6 @@
 		gap: 0.8em;
 	}
 	.tech {
-
 		justify-content: left;
 		flex-wrap: wrap;
 		gap: 0px;

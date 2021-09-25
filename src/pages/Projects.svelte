@@ -27,6 +27,7 @@
 					tech: project.tech,
 					url: project.url,
 					imageUrl: project.imageUrl,
+					code: project.code,
 				}}
 				class="module"
 			/>
