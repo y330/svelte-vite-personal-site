@@ -27,5 +27,6 @@
 	"dependencies": {
 		"svelte-feather-icons": "^3.5.0",
 		"@fontsource/inter": "^4.5.0"
-	}
+	},
+	"type": "module"
 }

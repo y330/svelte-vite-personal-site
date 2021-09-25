@@ -82,7 +82,7 @@
 	@use 'theme.scss';
 
 	.site {
-		flex: 1 1 450px;
+		flex: 1 1 250px;
 		display: flex;
 		flex-direction: column;
 		border: 2px theme.$tertiary solid;
@@ -92,8 +92,8 @@
 		padding-top: 0;
 		padding-right: 0;
 		min-width: 150px;
-		max-width: 700px;
-		// height: 400px;
+		max-width: 500px;
+		max-height: 600px;
 		overflow-y: scroll;
 		position: relative;
 		cursor: pointer;

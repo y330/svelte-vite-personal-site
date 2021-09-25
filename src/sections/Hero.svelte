@@ -21,16 +21,17 @@
 	<Subhead>
 		{headline}
 	</Subhead>
-	<a href="#summary" class="button">
-		<Button
-			class="scroll-down"
-			round
-			filled
-			on:click={() => router.push('#summary')}
-		>
+	<Button
+		class="scroll-down"
+		round
+		filled
+		on:click={() => router.push('#summary')}
+	>
+		<a href="#summary" class="button">
 			<ArrowDownIcon size="24" class="down-icon" />
-		</Button>
-	</a>
+		</a>
+	</Button>
+
 	<br />
 </section>
 
