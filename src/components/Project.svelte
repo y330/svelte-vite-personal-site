@@ -55,22 +55,36 @@
 ;"
 		class="site dark-mode scroll__ card"
 	>
-		<H2 class="title"
-			><a class="h2" href={project.url}>
-				<Typewriter interval={100}>
-					{project.title}
-				</Typewriter>
-			</a>
-		</H2>
+		<container class="site__header">
+			<H2 class="title"
+				><a class="h2" href={project.url}>
+					<Typewriter interval={100}>
+						{project.title}
+					</Typewriter>
+				</a>
+			</H2>
+		</container>
 		<div
 			class="description"
 			transition:fade={{ delay: randomInt(250, 1000) }}
 		>
 			{project.description}
 		</div>
-		<img src={project.imageUrl} alt="A screenshot of {project.title}" />
+		<Label
+			style="margin-right: 1em;text-align: center; border-radius: 2em;padding: 0.2em; background-color: #ff3e00; color: #fff"
+			>Interactive demo:</Label
+		>
+		{#if project.url.includes('github.com') || project.url.includes('chrome.google.com')}
+			<img src={project.imageUrl} alt="A screenshot of {project.title}" />
+		{:else}
+			<iframe src={project.url} frameborder="0" allowfullscreen />
+		{/if}
+		<br />
+		<Label
+			style="margin-right: 1em	;text-align: center; border-radius: 2em;padding: 0.2em; background-color: #ff3e00; color: #fff"
+			>Technologies used:</Label
+		>
 		<div class="technologies">
-			<Label>Technologies used:</Label>
 			<Chips tags={project.tech} />
 		</div>
 		{#if project.code != ''}Source: <a href={project.code}>{project.code}</a
@@ -97,9 +111,19 @@
 		overflow-y: scroll;
 		position: relative;
 		cursor: pointer;
-		justify-content: space-around;
+		justify-content: space-between;
 	}
-
+	.site__header {
+		position: relative;
+		width: 100%;
+		background-color: theme.$main;
+		margin-right: 0.5em;
+		margin-left: -0.5em;
+		text-align: center;
+		opacity: 0.8;
+		border-radius: 0.2em;
+		padding: 0.2em;
+	}
 	.site {
 		&:hover {
 			border-color: theme.$main;
@@ -116,51 +140,65 @@
 					&::after {
 						content: ' (click to view project)';
 						opacity: 1;
-						text-decoration: none;
+						text-decoration: underline;
 					}
 				}
-				& .description {
-					color: theme.$main;
-				}
+			}
+			& .description {
+				// color: theme.$main;
 			}
 		}
 		.title {
-			// top: 0;
-			background-color: theme.$main;
 			border-radius: 7px 0px 0 7px;
 			/* width: 110%; */
 			padding: 0;
-			height: fit-content;
+			// padding-top: 2em;
+			height: 2rem;
 			text-align: center;
-			position: relative;
-			max-height: 5rem;
+			position: fixed;
+			max-height: 2rem;
 			font-weight: 400;
+			opacity: 0.6;
 			transition-property: opacity, background-color;
 			transition-duration: 300ms ease-in-out;
 			a {
-				color: theme.$main;
+				color: theme.$background;
 
 				text-decoration: none;
 				&::after {
 					content: ' (click to view project)';
-					min-height: 9rem;
+					min-height: 5rem;
 					font-size: small;
 					transition-duration: 0.5s;
 					text-decoration: none;
-					opacity: 0;
+					opacity: 0.2;
 				}
-			}
-			& .description {
-				padding-top: 2rem;
-				flex: 1;
-				padding: 1rem;
 			}
 		}
 	}
-
+	.description {
+		margin-top: 3rem;
+		flex: 1;
+		padding: 1rem;
+	}
+	iframe {
+		margin-block: -0.29em;
+		margin-left: -0.01em;
+		// max-height: 70%;
+		max-width: 250%;
+		position: relative;
+		height: 1em;
+		border: 0.1px solid theme.$secondary;
+		align-self: center;
+		border-radius: 1px;
+		transform: scale(0.4);
+		zoom: 40;
+		background-color: white;
+	}
 	img {
-		margin-top: 1rem;
-		margin-right: 0.5em;
+		margin-left: 0.1em;
+		margin-right: 1em;
+		margin-top: 0.2em;
 		max-height: 70%;
 		max-width: 100%;
 		/* border-right: 20px solid black; */
@@ -171,7 +209,11 @@
 		flex: 1;
 	}
 	.technologies {
-		padding-right: 1em;
+		margin-inline: -2.5em;
+		// padding-right: 1em;
+		display: flex;
+		margin-top: -1em;
+		justify-content: space-evenly;
 		transform: scale(0.75);
 	}
 </style>

@@ -96,7 +96,7 @@
 		// justify-content: baseline;
 		list-style-type: none;
 		width: 100%;
-		/* gap: 0.4em; */
+		// /* gap: 0.4em; */
 	}
 	.skills {
 		justify-content: center;
