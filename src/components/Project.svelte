@@ -38,6 +38,7 @@
 	}
 
 	let mounted = false
+	
 	onMount(() => (mounted = true))
 </script>
 
@@ -71,7 +72,7 @@
 			{project.description}
 		</div>
 		<Label
-			style="margin-right: 1em;text-align: center; border-radius: 2em;padding: 0.2em; background-color: #ff3e00; color: #fff"
+			style="margin-right: 0.1em;text-align: center; border-radius: 2em;padding: 0.2em; background-color: #ff3e00; color: #fff"
 			>Interactive demo:</Label
 		>
 		{#if project.url.includes('github.com') || project.url.includes('chrome.google.com')}
@@ -81,7 +82,7 @@
 		{/if}
 		<br />
 		<Label
-			style="margin-right: 1em	;text-align: center; border-radius: 2em;padding: 0.2em; background-color: #ff3e00; color: #fff"
+			style="margin-right: 0.1em;text-align: center; border-radius: 2em;padding: 0.2em; background-color: #ff3e00; color: #fff"
 			>Technologies used:</Label
 		>
 		<div class="technologies">
@@ -115,7 +116,7 @@
 	}
 	.site__header {
 		position: relative;
-		width: 100%;
+		// width: 100%;
 		background-color: theme.$main;
 		margin-right: 0.5em;
 		margin-left: -0.5em;
@@ -183,7 +184,7 @@
 	}
 	iframe {
 		margin-block: -0.29em;
-		margin-left: -0.01em;
+		margin-inline: 80.5px 80px;
 		// max-height: 70%;
 		max-width: 250%;
 		position: relative;
@@ -197,7 +198,7 @@
 	}
 	img {
 		margin-left: 0.1em;
-		margin-right: 1em;
+		margin-right: 0.1em;
 		margin-top: 0.2em;
 		max-height: 70%;
 		max-width: 100%;
