@@ -10,15 +10,19 @@
 
 <container>
 	<Hero />
+	<br id="summary">
 	<br>
 	<br>
 	<br>
-	<div id="summary">
+	<br>
+	<br>
+	<br>
+	<div>
 		<Summary />
 	</div>
 	<section class="row">
 		<RecentProjects />
-
+		
 		<!-- <Skills /> -->
 	</section>
 </container>

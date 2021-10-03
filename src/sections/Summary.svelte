@@ -19,14 +19,17 @@
 		<div class="summary">
 			<b>
 				<!--About me -->
-				<Divider text="Summary" />
+				<Divider text="About me" />
 			</b>
 			<Card class="scroll__">
 				{summary}
 			</Card>
 		</div>
-		<Divider text="Skills" />
-		<Chips tags={skills}  isSkills={true}/>
+		<b>
+			<Divider text="Skills" />
+		</b>
+
+		<Chips tags={skills} isSkills={true} />
 	</div>
 </section>
 

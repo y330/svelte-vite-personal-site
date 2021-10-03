@@ -38,6 +38,8 @@
 	>
 		<GithubIcon size="18" /></Button
 	>
+	<Label>@</Label>
+
 	<Button
 		href="https://linkedin.com/in/yonahaviv"
 		round
@@ -59,7 +61,9 @@
 				<Switch bind:value={contactForm.sendEmails} />
 			</FormField>
 
-			<Button on:click={() => contactForm.show = false} filled>Submit</Button>
+			<Button on:click={() => (contactForm.show = false)} filled
+				>Submit</Button
+			>
 		</Dialog>
 	</Modal>
 {/if}
@@ -73,6 +77,8 @@
 		align-self: center;
 		display: flex;
 		flex-direction: row;
+		padding-right: 0.5em;
+
 		:global(.linkedin),
 		:global(.github) {
 			display: flex;
@@ -129,7 +135,8 @@
 	:global(.contact-btn) {
 		font-size: medium !important;
 		align-self: center;
-		height: 8vh;
+		height: 10vh;
+		padding-block: 0.75rem;
 	}
 
 	@media only screen and (max-width: 1025px) {

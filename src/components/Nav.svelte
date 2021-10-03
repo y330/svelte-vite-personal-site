@@ -1,5 +1,6 @@
 <script>
 	// Components
+	import { H3 } from 'attractions'
 	import PageTransitions from './PageTransitions.svelte'
 	import Socials from './Socials.svelte'
 	// Utils
@@ -27,7 +28,7 @@
 	</ul>
 	<Socials />
 </header>
-<div class="spacer"></div>
+<div class="spacer" />
 {#each items as item}
 	{#if selected == item.value}
 		<PageTransitions>
@@ -55,8 +56,10 @@
 		// border-radius: 20px 20px 0 0;
 		justify-content: space-evenly;
 		transition-duration: 500ms;
+		border-bottom: 2px solid theme.$light-contrast;
+
 		&:hover {
-			background-color: theme.$light-contrast;
+			background-color: theme.$textfield-bg;
 			// opacity: 0.6;
 		}
 	}
@@ -73,19 +76,22 @@
 	}
 	img {
 		height: 3em;
+		width: fit-content;
 		margin: 0;
 		// margin-left: 1em;
 
 		align-self: center;
 		border-radius: 5.25rem;
 		border-width: 0.2em;
-		border-style: dotted;
-		border-color: grey;
+		border-style: solid;
+		border-color: theme.$main;
+
 		transition: all 0.2s ease-in-out;
 		&:hover {
-			border-style: solid;
-			border-color: theme.$main;
+			border-style: dotted;
+			border-color: grey;
 		}
+
 		&:active {
 			border: none;
 		}
@@ -116,7 +122,7 @@
 				border-top-right-radius: 0.5rem;
 				border-radius: 5rem;
 				display: block;
-				padding: 0.5rem 1rem;
+				padding: 0.5rem 2rem;
 				cursor: pointer;
 				transition: all 300ms ease;
 

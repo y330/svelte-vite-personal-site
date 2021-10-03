@@ -1,5 +1,5 @@
 <script>
-	import { Subhead, Headline, Button } from 'attractions'
+	import { Subhead, H1, Headline, Button } from 'attractions'
 	import { configStore } from '/stores/configCopyStore'
 	import Typewriter from '../components/Typewriter/Typewriter.svelte'
 	import { ArrowDownIcon } from 'svelte-feather-icons'
@@ -12,7 +12,7 @@
 </script>
 
 <section class="hero">
-	<Subhead>Hey, I'm</Subhead>
+	<H1>Hey, I'm</H1>
 	<Typewriter interval={100} cursor="$main">
 		<!--Name-->
 		<Headline>{name}</Headline>
@@ -21,6 +21,8 @@
 	<Subhead>
 		{headline}
 	</Subhead>
+	<br />
+	<br />
 	<Button
 		class="scroll-down"
 		round
@@ -50,7 +52,7 @@
 		height: 100vh;
 	}
 	:global(.scroll-down, .down-icon) {
-		margin: auto;
+		margin-inline: auto;
 		color: theme.$background;
 	}
 	:global(.hero.btn:not(#summary)) {

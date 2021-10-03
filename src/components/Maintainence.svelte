@@ -3,7 +3,6 @@
 	import { SnackbarContainer } from 'attractions'
 	let showMaintainance = false
 	onMount(() => {
-		async function showAlert() {}
 		const interval = setInterval(() => {
 			showMaintainance = !showMaintainance
 		}, 3000)

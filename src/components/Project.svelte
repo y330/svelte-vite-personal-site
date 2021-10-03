@@ -4,8 +4,10 @@
 	import { fade, slide } from 'svelte/transition'
 	import { tweened } from 'svelte/motion'
 	import { cubicOut } from 'svelte/easing'
+	// Components
 	import Chips from './Chips.svelte'
 	import Typewriter from './Typewriter/Typewriter.svelte'
+	import Fullscreen from './Fullscreen.svelte'
 	import { H2, Label } from 'attractions'
 	// ------- parameters
 	export let project = {
@@ -38,7 +40,7 @@
 	}
 
 	let mounted = false
-	
+
 	onMount(() => (mounted = true))
 </script>
 
@@ -50,20 +52,18 @@
 		on:mouseleave={handleMouseLeave}
 		on:touchend={handleMouseLeave}
 		transition:slide={{ delay: randomInt(200, 500) }}
-		style="box-shadow: {$shadow * 8}px {$shadow * 4}px #ff3e00, {$shadow *
-			16}px {$shadow * 8}px rgba(255, 85, 0, 0.55), {$shadow *
-			24}px {$shadow * 12}px rgba(255, 100, 0.6, 0.22);
+		style="box-shadow: {$shadow * 6}px {$shadow * 3}px #ff3e00, {$shadow *
+			10}px {$shadow * 5}px rgba(255, 85, 0, 0.55), {$shadow *
+			14}px {$shadow * 7}px rgba(255, 100, 0.6, 0.22);
 ;"
 		class="site dark-mode scroll__ card"
 	>
 		<container class="site__header">
-			<H2 class="title"
-				><a class="h2" href={project.url}>
-					<Typewriter interval={100}>
-						{project.title}
-					</Typewriter>
-				</a>
-			</H2>
+			<a class="title" href={project.url}>
+				<Typewriter interval={20}>
+					{project.title}
+				</Typewriter>
+			</a>
 		</container>
 		<div
 			class="description"
@@ -71,20 +71,32 @@
 		>
 			{project.description}
 		</div>
-		<Label
-			style="margin-right: 0.1em;text-align: center; border-radius: 2em;padding: 0.2em; background-color: #ff3e00; color: #fff"
+		<Label style="margin-top: 1em;" class="project-label"
 			>Interactive demo:</Label
 		>
-		{#if project.url.includes('github.com') || project.url.includes('chrome.google.com')}
-			<img src={project.imageUrl} alt="A screenshot of {project.title}" />
-		{:else}
-			<iframe src={project.url} frameborder="0" allowfullscreen />
-		{/if}
+		<Fullscreen let:isFull>
+			<div>
+				{#if !isFull}
+					<img
+						src={project.imageUrl}
+						alt="A screenshot of {project.title}"
+					/>
+				{:else if project.url.includes('github.com') || project.url.includes('chrome.google.com')}
+					<img
+						src={project.imageUrl}
+						alt="A screenshot of {project.title}"
+					/>
+				{:else}
+					<iframe src={project.url} frameborder="0" allowfullscreen />
+				{/if}
+			</div>
+		</Fullscreen>
+
+		<!-- {#if project.url.includes('github.com') || project.url.includes('chrome.google.com')}{:else}
+
+		{/if} -->
 		<br />
-		<Label
-			style="margin-right: 0.1em;text-align: center; border-radius: 2em;padding: 0.2em; background-color: #ff3e00; color: #fff"
-			>Technologies used:</Label
-		>
+		<Label class="project-label">Technologies used:</Label>
 		<div class="technologies">
 			<Chips tags={project.tech} />
 		</div>
@@ -97,7 +109,7 @@
 	@use 'theme.scss';
 
 	.site {
-		flex: 1 1 250px;
+		flex: 1 1 450px;
 		display: flex;
 		flex-direction: column;
 		border: 2px theme.$tertiary solid;
@@ -107,114 +119,106 @@
 		padding-top: 0;
 		padding-right: 0;
 		min-width: 150px;
-		max-width: 500px;
-		max-height: 600px;
+		max-width: 800px;
+		min-height: fit-content;
 		overflow-y: scroll;
 		position: relative;
 		cursor: pointer;
-		justify-content: space-between;
+		align-content: flex-end;
+		justify-content: space-around;
 	}
-	.site__header {
-		position: relative;
-		// width: 100%;
-		background-color: theme.$main;
-		margin-right: 0.5em;
-		margin-left: -0.5em;
-		text-align: center;
-		opacity: 0.8;
-		border-radius: 0.2em;
-		padding: 0.2em;
-	}
+
 	.site {
+		background-color: rgba(155, 155, 155, 0.1);
+
 		&:hover {
 			border-color: theme.$main;
 			color: var(--accent-color);
 			&::-webkit-scrollbar-thumb {
 				background-color: theme.$main;
 			}
-			& .title {
-				/* border: 2px white solid; */
-				color: white;
-
-				background-color: theme.$secondary;
-				a {
-					&::after {
-						content: ' (click to view project)';
-						opacity: 1;
-						text-decoration: underline;
-					}
-				}
+			h2 {
+				background-color: rgba(100, 100, 100, 0.6);
 			}
-			& .description {
-				// color: theme.$main;
+			& .title {
+				color: theme.$tertiary;
+
+				&::after {
+					content: 'Go to project website';
+					opacity: 1;
+					color: theme.$tertiary;
+				}
 			}
 		}
 		.title {
+			// top: 0;
 			border-radius: 7px 0px 0 7px;
-			/* width: 110%; */
-			padding: 0;
-			// padding-top: 2em;
-			height: 2rem;
-			text-align: center;
-			position: fixed;
-			max-height: 2rem;
-			font-weight: 400;
-			opacity: 0.6;
-			transition-property: opacity, background-color;
-			transition-duration: 300ms ease-in-out;
-			a {
-				color: theme.$background;
+			width: 90%;
+			color: theme.$main;
 
-				text-decoration: none;
-				&::after {
-					content: ' (click to view project)';
-					min-height: 5rem;
-					font-size: small;
-					transition-duration: 0.5s;
-					text-decoration: none;
-					opacity: 0.2;
-				}
+			padding: 0;
+			margin-top: 0;
+			// height: fit-content;
+			text-align: center;
+			position: relative;
+			// max-height: 8rem;
+			font-weight: 400;
+			transition-property: color, opacity, background-color;
+			transition-duration: 300ms ease-in-out;
+
+			text-decoration: none;
+			// color: white !important;
+			&::after {
+				text-decoration: underline;
+
+				content: 'Go to...';
+				font-size: small;
+				transition-duration: 0.3s;
+				opacity: 0.5;
 			}
 		}
+
+		& .description {
+			padding-top: 2rem;
+			flex: 1;
+			padding: 1rem;
+		}
 	}
-	.description {
-		margin-top: 3rem;
-		flex: 1;
-		padding: 1rem;
-	}
-	iframe {
-		margin-block: -0.29em;
-		margin-inline: 80.5px 80px;
-		// max-height: 70%;
-		max-width: 250%;
-		position: relative;
-		height: 1em;
-		border: 0.1px solid theme.$secondary;
-		align-self: center;
-		border-radius: 1px;
-		transform: scale(0.4);
-		zoom: 40;
-		background-color: white;
+	:global(.project-label) {
+		margin-right: 0.1em;
+		text-align: center;
+		border-radius: 0.5em;
+		padding: 0.2em;
+		background-color: #ff3e00;
+		color: #fff !important;
 	}
 	img {
-		margin-left: 0.1em;
-		margin-right: 0.1em;
-		margin-top: 0.2em;
+		margin-top: 1rem;
+		margin-right: 0.5em;
 		max-height: 70%;
 		max-width: 100%;
 		/* border-right: 20px solid black; */
 		align-self: center;
 		border-radius: 10px;
 	}
+	iframe {
+		min-width: 100%;
+		min-height: 100%;
+		zoom: 100%;
+
+		position: absolute;
+		top: 0;
+		left: 0;
+	}
+	iframe::after
 	.code {
 		flex: 1;
 	}
 	.technologies {
-		margin-inline: -2.5em;
+		padding: 1.5em;
 		// padding-right: 1em;
-		display: flex;
-		margin-top: -1em;
-		justify-content: space-evenly;
-		transform: scale(0.75);
+		transform: scale(0.85);
+		border: 1px solid theme.$main;
+		border-radius: 20px;
 	}
 </style>

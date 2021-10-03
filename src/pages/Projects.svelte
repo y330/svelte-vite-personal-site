@@ -1,7 +1,7 @@
 <script>
 	// Components
 	import Typewriter from './../components/Typewriter/Typewriter.svelte'
-	import { H1 } from 'attractions'
+	import { Headline } from 'attractions'
 	import ResponsiveGrid from './../components/ResponsiveGrid.svelte'
 	import Project from './../components/Project.svelte'
 
@@ -14,7 +14,7 @@
 
 <div class="title">
 	<Typewriter interval={100} cursor="#ff3e00">
-		<H1>Projects</H1>
+		<Headline>Projects</Headline>
 	</Typewriter>
 </div>
 <section>

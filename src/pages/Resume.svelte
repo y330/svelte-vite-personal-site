@@ -23,4 +23,8 @@
 	section {
 		height: fit-content;
 	}
+	iframe {
+		border-radius: 2em;
+		border: 2px solid #ff3e00;
+	}
 </style>

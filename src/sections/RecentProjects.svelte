@@ -99,6 +99,7 @@
     color: #656565;
     min-width: 100%;
     display: flex;
+    margin-top: 1em;
     flex-direction: row;
     justify-content: space-between;
     border: none;
