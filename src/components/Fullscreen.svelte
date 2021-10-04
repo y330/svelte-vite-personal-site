@@ -78,7 +78,7 @@
 	{#if fullscreenSupport}
 		<Button
 			primary
-			style="z-index: 5; background-color: rgb(255, 209, 185) !important"
+			style="z-index: 2z; background-color: rgb(255, 209, 185) !important"
 			on:click={fsToggle}
 		>
 			<svelte:component this={icon.component} {...icon.props} />

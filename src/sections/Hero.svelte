@@ -15,7 +15,7 @@
 	<H1>Hey, I'm</H1>
 	<Typewriter interval={100} cursor="$main">
 		<!--Name-->
-		<Headline>{name}</Headline>
+		<Headline style="text-overflow: ellipsis;">{name}</Headline>
 	</Typewriter>
 	<!--Headline-->
 	<Subhead>
@@ -42,8 +42,9 @@
 	.hero {
 		display: flex;
 		flex-direction: column;
+		align-items: center;
 		:global(.headline) {
-			font-size: 100px;
+			font-size: 5em;
 			font-family: theme.$font;
 		}
 	}
