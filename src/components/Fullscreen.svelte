@@ -64,8 +64,8 @@
 	}
 
 	const iconStates = [
-		{ component: Maximize2Icon, props: { size: '24' } },
-		{ component: Minimize2Icon, props: { size: '24' } },
+		{ component: Maximize2Icon, props: { size: '16' } },
+		{ component: Minimize2Icon, props: { size: '16' } },
 	]
 
 	// the icon name is computed automagically based
@@ -75,22 +75,34 @@
 
 <div class="fs" class:isFull bind:this={fsContainer}>
 	<slot {isFull} />
-	{#if fullscreenSupport}
-		<Button
+	{#if fullscreenSupport && !isFull}
+		<button
+			class="btn"
 			primary
-			style="z-index: 2z; background-color: rgb(255, 209, 185) !important"
+			style="border-radius: 2em;padding: 0.5em;margin-top: 1em;z-index: 6;background-color: rgb(255, 209, 185) !important"
 			on:click={fsToggle}
 		>
 			<svelte:component this={icon.component} {...icon.props} />
-Preview demo fullscreen
-		</Button>
-	{/if}
+			Embed fullscreen
+		</button>
+	{:else}
+		<button
+			class="btn"
+			primary
+			style="position: fixed; bottom: 10px; right: 10px;border-radius: 2em;padding: 0.5em;margin-top: 1em;z-index: 6;background-color: rgb(255, 209, 185) !important; box-shadow: 0 0 40px 20px #ff3e00;			"
+			on:click={fsToggle}
+		>
+			<svelte:component this={icon.component} {...icon.props} />
+			Exit fulllscreen
+		</button>{/if}
 </div>
 
 <style>
 	.isFull {
 		width: 100vw;
 		height: 100vh;
+		z-index: 5;
+		position: fixed;
 		display: flex;
 		align-items: center;
 		justify-content: center;

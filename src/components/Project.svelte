@@ -141,12 +141,10 @@
 				background-color: rgba(100, 100, 100, 0.6);
 			}
 			& .title {
-				color: theme.$tertiary;
-
+				color: theme.$main;
 				&::after {
 					content: 'Go to project website';
 					opacity: 1;
-					color: theme.$tertiary;
 				}
 			}
 		}
@@ -171,7 +169,7 @@
 			&::after {
 				text-decoration: underline;
 
-				content: 'Go to...';
+				content: 'Go to project website';
 				font-size: small;
 				transition-duration: 0.3s;
 				opacity: 0.5;
@@ -210,8 +208,7 @@
 		top: 0;
 		left: 0;
 	}
-	iframe::after
-	.code {
+	iframe::after .code {
 		flex: 1;
 	}
 	.technologies {
