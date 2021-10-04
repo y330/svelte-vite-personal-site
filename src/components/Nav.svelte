@@ -155,7 +155,7 @@
 			width: 6rem;
 		}
 		.spacer {
-			height: 5rem;
+			height: 8rem;
 		}
 		ul {
 			width: 100%;
@@ -202,7 +202,7 @@
 			width: 5rem;
 		}
 		.spacer {
-			height: 8rem;
+			height: 10rem;
 		}
 	}
 
@@ -213,7 +213,7 @@
 			width: 6rem;
 		}
 		.spacer {
-			height: 8rem;
+			height: 20rem;
 		}
 	}
 
