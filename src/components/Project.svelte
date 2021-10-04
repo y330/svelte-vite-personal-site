@@ -153,14 +153,14 @@
 			border-radius: 7px 0px 0 7px;
 			width: 90%;
 			color: theme.$main;
-
+			font-weight: bold;
+			font-size: large;
 			padding: 0;
 			margin-top: 0;
 			// height: fit-content;
 			text-align: center;
 			position: relative;
 			// max-height: 8rem;
-			font-weight: 400;
 			transition-property: color, opacity, background-color;
 			transition-duration: 300ms ease-in-out;
 
