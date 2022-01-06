@@ -12,6 +12,10 @@
 
   let projects = [
     {
+      label: "Essay Writer Bot",
+      desc: "Artifical Intelligence essay writer that uses OpenAI’s GPT‑3 to write essays for academic and non‑academic purposes. For obvious reasons, I have not made this available publicly. For a preview site: <a href='https://essaybot.herokuapp.com/' target='_blank'>https://essaybot.herokuapp.com/</a>",
+    },
+    {
       label: "FragmentQR",
       desc: "Browser extension that allows for the generation of QR codes linking to arbitrary text on a page. <a style='color:lightgray' href='#'>Read more</a> <br><a href='https://bit.ly/FQRInstall'>Go to project.</a>",
     },
@@ -42,98 +46,98 @@
 </script>
 
 <section>
-  <Divider text="Recent Projects" />
-  {#each projects as proj}
-    <div class="accordion-item" class:active={expanded === proj.label}>
-      <button
-        style="transition:all 300ms ease; padding: 1em;"
-        class:active={expanded === proj.label}
-        on:click={() => {
-          expanded = proj.label;
-        }}
-      >
-        <div>
-          <b>{proj.label}</b>
-          <code>
-            <ClockIcon size="10" />
-            {new Date().getMinutes().toString()} min ago</code
-          >
-        </div>
-        <div>
-          {#if expanded === proj.label}
-            <ChevronDownIcon size="25" strokeWidth="2" />
-          {:else}
-            <ChevronRightIcon size="25" strokeWidth="2" />
-          {/if}
-        </div>
-      </button>
+	<Divider text="Recent Projects" />
+	{#each projects as proj}
+		<div class="accordion-item" class:active={expanded === proj.label}>
+			<button
+				style="transition:all 300ms ease; padding: 1em;"
+				class:active={expanded === proj.label}
+				on:click={() => {
+					expanded = proj.label
+				}}
+			>
+				<div>
+					<b>{proj.label}</b>
+					<code>
+						<ClockIcon size="10" />
+						{new Date().getMinutes().toString()} min ago</code
+					>
+				</div>
+				<div>
+					{#if expanded === proj.label}
+						<ChevronDownIcon size="25" strokeWidth="2" />
+					{:else}
+						<ChevronRightIcon size="25" strokeWidth="2" />
+					{/if}
+				</div>
+			</button>
 
-      {#if expanded === proj.label}
-        <div
-          class="info"
-          in:fly={{ x: -200, duration: 1500 }}
-          out:fly={{ x: 50, duration: 500 }}
-        >
-          <Card outline tight>
-            <p>
-              {@html proj.desc}
-            </p></Card
-          >
-        </div>
-      {/if}
-    </div>
-  {/each}
+			{#if expanded === proj.label}
+				<div
+					class="info"
+					in:fly={{ x: -200, duration: 1500 }}
+					out:fly={{ x: 50, duration: 500 }}
+				>
+					<Card outline tight>
+						<p>
+							{@html proj.desc}
+						</p></Card
+					>
+				</div>
+			{/if}
+		</div>
+	{/each}
 </section>
 
 <style lang="scss">
-  @import "theme.scss";
-  :host {
-    width: auto;
-    // justify-items: left;
-  }
+	@import 'theme.scss';
+	:host {
+		width: auto;
+		// justify-items: left;
+	}
 
-  button {
-    border-radius: 10px;
-    text-align: left;
-    background-color: rgba(0, 0, 0, 0.08);
-    color: #656565;
-    min-width: 100%;
-    display: flex;
-    margin-top: 1em;
-    flex-direction: row;
-    justify-content: space-between;
-    border: none;
+	button {
+		border-radius: 10px;
+		text-align: left;
+		background-color: rgba(0, 0, 0, 0.08);
+		color: #656565;
+		min-width: 100%;
+		display: flex;
+		margin-top: 1em;
+		flex-direction: row;
+		justify-content: space-between;
+		border: none;
 
-    code {
-      // margin-left: 100%;
-      color: #bbbb;
-    }
-    div {
-      // flex-grow:20;
-    }
-    :hover {
-      cursor: pointer;
-    }
-  }
-  .active {
-    position: sticky;
-    z-index: 1;
-    & button {
-      background-color: $main;
-      color: #fff;
-      transition: all 300ms ease;
-      code {
-        color: red;
-      }
-    }
-  }
-  .info {
-    margin-bottom: 2rem;
-    max-width: fit-content;
-    word-wrap: break-word;
-    p {
-      padding-inline: 10px;
-      padding-bottom: 1em;
-    }
-  }
+		code {
+			// margin-left: 100%;
+			color: #bbbb;
+		}
+		div {
+			// flex-grow:20;
+		}
+		:hover {
+			cursor: pointer;
+		}
+	}
+	.active {
+		position: sticky;
+		z-index: 1;
+		& button {
+			background-color: $main;
+			color: #fff;
+			transition: all 300ms ease;
+			code {
+				color: red;
+			}
+		}
+	}
+	.info {
+		margin-bottom: 2rem;
+		max-width: fit-content;
+		word-wrap: break-word;
+		p {
+			padding-inline: 10px;
+			padding-bottom: 1em;
+		}
+	}
 </style>

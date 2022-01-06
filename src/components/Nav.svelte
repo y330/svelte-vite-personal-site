@@ -202,7 +202,7 @@
 			width: 5rem;
 		}
 		.spacer {
-			height: 10rem;
+			height: 15rem;
 		}
 	}
 
@@ -213,7 +213,7 @@
 			width: 6rem;
 		}
 		.spacer {
-			height: 20rem;
+			height: 15rem;
 		}
 	}
 

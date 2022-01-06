@@ -16,6 +16,7 @@
 		tech: [],
 		url: '#',
 		imageUrl: '#',
+		videoUrl: '#',
 		code: '',
 	}
 	// -------- state
@@ -76,7 +77,14 @@
 		>
 		<Fullscreen let:isFull>
 			<div>
-				{#if !isFull}
+				{#if project.imageUrl == 'this is a video'}
+					<video controls="" autoplay="" name="media"
+						><source
+							src={project.videoUrl}
+							type="video/mp4"
+						/></video
+					>
+				{:else if !isFull}
 					<img
 						src={project.imageUrl}
 						alt="A screenshot of {project.title}"
@@ -190,7 +198,8 @@
 		background-color: #ff3e00;
 		color: #fff !important;
 	}
-	img {
+	img,
+	video {
 		margin-top: 1rem;
 		margin-right: 0.5em;
 		max-height: 70%;

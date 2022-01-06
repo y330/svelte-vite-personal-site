@@ -1,1 +1,141 @@
-{"name":"Yonah Aviv","headline":"Senior Student at TanenbaumCHAT, Coding Tutor, Co-founder of Habit Cash","summary":"I am a senior high school student, and I am very passionate about computer science and technology. Specific interests of mine include Machine Learning/Artificial Intelligence and Natural Language Processing, Web Development, Modern Physics, and Mathematics. Aside from being in school, I recently co-founded a startup and I currently work there as a software developer. On the topic of software development, I am also a coding tutor and developer bootcamp instructor for School Simplified.","projects":[{"title":"My Portfolio Site","description":"My personal portfolio site with google doc content management system using ArchieML.","tech":["Svelte","TypeScript","ArchieML","Vite","Attractions UI library"],"url":"https://yonah.ml","imageUrl":"https://user-images.githubusercontent.com/68514914/134783843-721d88c2-133b-4617-a251-bed01206c6ca.png","code":"https://github.com/y330/svelte-vite-personal-site"},{"title":"Svelte Portfolio with GitHub API","description":"Quick and simple svelte portfolio web app that automatically fetches your github repos and displays them as projects in a responsive grid. Made for a workshop I hosted.","tech":["Svelte","JavaScript","GitHub API"],"url":"https://svelte-portfolio-demo-for-workshop.vercel.app/","imageUrl":"https://github.com/y330/svelte-portfolio-demo-for-workshop/raw/master/portoflio-example-site-ss.png","code":"https://github.com/y330/svelte-portfolio-demo-for-workshop"},{"title":"Flask Svelte Heroku starter template","description":"Flask with Svelte (single page application) frontend starter template , with heroku deployment made easy(no docker)","tech":["JavaScript","Svelte","Python","Heroku","Pipenv","Flask"],"url":"https://flask-svelte-heroku.herokuapp.com/","imageUrl":"https://github.com/y330/Flask-Svelte-Heroku-starter/raw/master/flask-svelte-heroku-ss.png","code":"https://github.com/y330/Flask-Svelte-Heroku-starter"},{"title":"Flask Svelte Heroku starter template","description":"Flask with Svelte (single page application) frontend starter template , with heroku deployment made easy(no docker)","tech":["JavaScript","Svelte","Python","Heroku","Pipenv","Flask"],"url":"https://flask-svelte-heroku.herokuapp.com/","imageUrl":"https://github.com/y330/Flask-Svelte-Heroku-starter/raw/master/flask-svelte-heroku-ss.png","code":"https://github.com/y330/Flask-Svelte-Heroku-starter"},{"title":"QuickSum","description":"Paste a body of text (i.e., an article, essay, etc.) and QuickSum will generate a summary of it for you. Coded using Svelte","tech":["Svelte","SASS","TypeScript","Webpack","Carbon Design","PostCSS"],"url":"https://quicksum.vercel.app/","imageUrl":"https://github.com/y330/quicksum/blob/master/quicksum-ss.png?raw=true","code":"https://github.com/y330/quicksum"},{"title":"Client Portfolio Website","description":"incomplete portfolio website coded by Yonah Aviv for Harry James potter. This project was not finished because they did not need it anymore.","tech":["Svelte","SvelteKit","TypeScript","PostCSS","Tailwind.css","DaisyUI"],"url":"https://harrypotter-portfolio.vercel.app/","imageUrl":"https://user-images.githubusercontent.com/68514914/134787049-9c3208f9-ebeb-4092-a188-1a25c75dff6d.png"},{"title":"Dystopian Literature Blog","description":"Blog on various dystopian texts for the final summative task in my grade 11 English class","tech":["JavaScript","Svelte","TailwindCSS","Daisy UI","GraphCMS"],"url":"https://yonahs-fst.vercel.app","imageUrl":"https://github.com/y330/sveltekit-cms---yonahs-blog/blob/master/yonahs-fst-ss.png?raw=true","code":"https://github.com/y330/sveltekit-cms---yonahs-blog"},{"title":"Pydash","description":"Python implementation of Geometry dash, a rhythm based platformer game, using Pygame, an interactive graphics library for python. Made for a computer science course","tech":["Python","Pygame"],"url":"https://github.com/y330/Pydash","imageUrl":"https://camo.githubusercontent.com/ad283c0a0ea6d40cbc320ec72a6f7fcc19331506cfa7209d11120193e1c13e44/68747470733a2f2f6c68332e676f6f676c6575736572636f6e74656e742e636f6d2f70772f414374432d3366714f484d6b6f7042516c5571534635766a6854434c37334470303932573956536e30514973764a3736652d6a6e6c543771456b64765370474748486a575367386f3263485a626c53436c6f4f39584d3135396f45754771656c6d2d50664e72732d633462667741397132536562353374476574754e5572786552505973444b4c6542687741527956494e765a304d4d5473672d6c6e56513d773739362d683539362d6e6f3f61757468757365723d30","code":"https://github.com/y330/Pydash"},{"title":"FragmentQR","description":"Browser extension that allows for the generation of QR codes linking to arbitrary text on a page.","tech":["JavaScript","Chrome APIs","Chrome extension"],"url":"https://chrome.google.com/webstore/detail/fragmentqr/cabodnfakameckfbbgkciiifempglloj","imageUrl":"https://github.com/y330/FragmentQR/blob/master/fqr-ss.png?raw=true"}],"skills":["Python","JavaScript","Svelte","NodeJS","Java","Flask","TypeScript"]}
+{
+	"name": "Yonah Aviv",
+	"headline": "Senior Student at TanenbaumCHAT, Freelance Software Developer, Coding Tutor",
+	"summary": "I am a senior high school student with a deep passion and curiosity for computer science and technology. I am a self‑taught computer programmer with experience in web development and artificial intelligence(including natural language processing). Currently, I am working on using AI to make life easier for students for whom it isn’t easy to start written assignments.",
+	"projects": [
+		{
+			"title": "Essay Writer Bot",
+			"description": "Artifical Intelligence essay writer that uses OpenAI’s GPT‑3 to write essays for academic and non‑academic purposes. For obvious reasons, I have not made this available publicly. However there is a link to a demo website.",
+			"tech": ["Java", "GPT-3", "Vaadin flow"],
+			"url": "https://essaybot.herokuapp.com/home",
+			"imageUrl": "this is a video",
+			"videoUrl": "https://dsm01pap002files.storage.live.com/y4pfqQxOgZW0HgompPmQc9vDnOQmVJXVXzhz-90E0KKRctoPMt9iKvUAJ_XapnWClRPrZf_-WLyQOu2Wi9GNZcR8foXP7mPde0sltH8KmU6bHgIKf3ocVsbG-w1sj0mQ8FmdvVGMa2P-UI7giAeDRYwvC2OzoYIo9Xbulk856jq3Mzy6ZZ6EwO27f7GkKyL1GN8/IMG_20210519_233316238-01.jpeg?psid=1&width=1359&height=765"
+		},
+		{
+			"title": "My Portfolio Site",
+			"description": "My personal portfolio site with google doc content management system using ArchieML.",
+			"tech": [
+				"Svelte",
+				"TypeScript",
+				"ArchieML",
+				"Vite",
+				"Attractions UI library"
+			],
+			"url": "https://yonah.ml",
+			"imageUrl": "https://user-images.githubusercontent.com/68514914/134783843-721d88c2-133b-4617-a251-bed01206c6ca.png",
+			"code": "https://github.com/y330/svelte-vite-personal-site"
+		},
+		{
+			"title": "Svelte Portfolio with GitHub API",
+			"description": "Quick and simple svelte portfolio web app that automatically fetches your github repos and displays them as projects in a responsive grid. Made for a workshop I hosted.",
+			"tech": ["Svelte", "JavaScript", "GitHub API"],
+			"url": "https://svelte-portfolio-demo-for-workshop.vercel.app/",
+			"imageUrl": "https://github.com/y330/svelte-portfolio-demo-for-workshop/raw/master/portoflio-example-site-ss.png",
+			"videoUrl": "",
+			"code": "https://github.com/y330/svelte-portfolio-demo-for-workshop"
+		},
+		{
+			"title": "Flask Svelte Heroku starter template",
+			"description": "Flask with Svelte (single page application) frontend starter template , with heroku deployment made easy(no docker)",
+			"tech": [
+				"JavaScript",
+				"Svelte",
+				"Python",
+				"Heroku",
+				"Pipenv",
+				"Flask"
+			],
+			"url": "https://flask-svelte-heroku.herokuapp.com/",
+			"imageUrl": "https://github.com/y330/Flask-Svelte-Heroku-starter/raw/master/flask-svelte-heroku-ss.png",
+			"videoUrl": "",
+			"code": "https://github.com/y330/Flask-Svelte-Heroku-starter"
+		},
+		{
+			"title": "Flask Svelte Heroku starter template",
+			"description": "Flask with Svelte (single page application) frontend starter template , with heroku deployment made easy(no docker)",
+			"tech": [
+				"JavaScript",
+				"Svelte",
+				"Python",
+				"Heroku",
+				"Pipenv",
+				"Flask"
+			],
+			"url": "https://flask-svelte-heroku.herokuapp.com/",
+			"imageUrl": "https://github.com/y330/Flask-Svelte-Heroku-starter/raw/master/flask-svelte-heroku-ss.png",
+			"videoUrl": "",
+			"code": "https://github.com/y330/Flask-Svelte-Heroku-starter"
+		},
+		{
+			"title": "QuickSum",
+			"description": "Paste a body of text (i.e., an article, essay, etc.) and QuickSum will generate a summary of it for you. Coded using Svelte",
+			"tech": [
+				"Svelte",
+				"SASS",
+				"TypeScript",
+				"Webpack",
+				"Carbon Design",
+				"PostCSS"
+			],
+			"url": "https://quicksum.vercel.app/",
+			"imageUrl": "https://github.com/y330/quicksum/blob/master/quicksum-ss.png?raw=true",
+			"code": "https://github.com/y330/quicksum"
+		},
+		{
+			"title": "Client Portfolio Website",
+			"description": "incomplete portfolio website coded by Yonah Aviv for Harry James potter. This project was not finished because they did not need it anymore.",
+			"tech": [
+				"Svelte",
+				"SvelteKit",
+				"TypeScript",
+				"PostCSS",
+				"Tailwind.css",
+				"DaisyUI"
+			],
+			"url": "https://harrypotter-portfolio.vercel.app/",
+			"imageUrl": "https://user-images.githubusercontent.com/68514914/134787049-9c3208f9-ebeb-4092-a188-1a25c75dff6d.png",
+			"videoUrl": ""
+		},
+		{
+			"title": "Dystopian Literature Blog",
+			"description": "Blog on various dystopian texts for the final summative task in my grade 11 English class",
+			"tech": [
+				"JavaScript",
+				"Svelte",
+				"TailwindCSS",
+				"Daisy UI",
+				"GraphCMS"
+			],
+			"url": "https://yonahs-fst.vercel.app",
+			"imageUrl": "https://github.com/y330/sveltekit-cms---yonahs-blog/blob/master/yonahs-fst-ss.png?raw=true",
+			"videoUrl": "",
+			"code": "https://github.com/y330/sveltekit-cms---yonahs-blog"
+		},
+		{
+			"title": "Pydash",
+			"description": "Python implementation of Geometry dash, a rhythm based platformer game, using Pygame, an interactive graphics library for python. Made for a computer science course",
+			"tech": ["Python", "Pygame"],
+			"url": "https://github.com/y330/Pydash",
+			"imageUrl": "https://camo.githubusercontent.com/ad283c0a0ea6d40cbc320ec72a6f7fcc19331506cfa7209d11120193e1c13e44/68747470733a2f2f6c68332e676f6f676c6575736572636f6e74656e742e636f6d2f70772f414374432d3366714f484d6b6f7042516c5571534635766a6854434c37334470303932573956536e30514973764a3736652d6a6e6c543771456b64765370474748486a575367386f3263485a626c53436c6f4f39584d3135396f45754771656c6d2d50664e72732d633462667741397132536562353374476574754e5572786552505973444b4c6542687741527956494e765a304d4d5473672d6c6e56513d773739362d683539362d6e6f3f61757468757365723d30",
+			"videoUrl": "",
+			"code": "https://github.com/y330/Pydash"
+		},
+		{
+			"title": "FragmentQR",
+			"description": "Browser extension that allows for the generation of QR codes linking to arbitrary text on a page.",
+			"tech": ["JavaScript", "Chrome APIs", "Chrome extension"],
+			"url": "https://chrome.google.com/webstore/detail/fragmentqr/cabodnfakameckfbbgkciiifempglloj",
+			"imageUrl": "https://github.com/y330/FragmentQR/blob/master/fqr-ss.png?raw=true",
+			"videoUrl": ""
+		}
+	],
+	"skills": [
+		"Java",
+		"Python",
+		"JavaScript",
+		"TypeScript",
+		"Svelte",
+		"NodeJS",
+		"Flask"
+	]
+}
