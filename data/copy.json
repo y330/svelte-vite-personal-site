@@ -8,7 +8,7 @@
 			"description": "Artifical Intelligence essay writer that uses OpenAI’s GPT‑3 to write essays for academic and non‑academic purposes. For obvious reasons, I have not made this available publicly. However there is a link to a demo website.",
 			"tech": ["Java", "GPT-3", "Vaadin flow"],
 			"url": "https://essaybot.herokuapp.com/home",
-			"imageUrl": "https://github.com/y330/Java-GPT-vaadin-essay-writer/raw/master/essaybot.png",
+			"imageUrl": "https://github.com/y330/Assets-images-/raw/master/essaybot.png",
 			"videoUrl": "",
 			"code": "https://wanghenshui.github.io/gist-viewer/#54c7cd1b5b0f2c819c862218f99354b9"
 		},
