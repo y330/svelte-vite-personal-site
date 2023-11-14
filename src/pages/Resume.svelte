@@ -10,7 +10,7 @@
 <section>
 	<Subhead><em>Drag corners to resize</em></Subhead>
 	<iframe
-		src="https://onedrive.live.com/embed?cid=D1BCEE1A2FD48DEE&resid=D1BCEE1A2FD48DEE%213101&authkey=AHe6Dp18RHN11Co&em=2"
+		src="https://1drv.ms/b/s!Au6N1C8a7rzRnRPRmC1bCTXvF1JC?e=LWuN7S"
 		height="800"
 		frameborder="0"
 		width="100%"
