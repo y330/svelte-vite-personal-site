@@ -1,7 +1,7 @@
 {
 	"name": "Yonah Aviv",
 	"headline": "Computer Science Student at Wilfried Laurier University",
-	"summary": "<ul><li>Currently studying computer science and psychology at Wilfrid Laurier University</li><li>Past computer science tutor and avid software developer recently on a gap year</li><li>Gained 3+ years of coding experience through side projects and hackathonsence in web development and artificial intelligence(including natural language processing). Currently, I am working on using AI to help students for whom it isn’t easy to start written assignments.</li></ul>",
+	"summary": "I am a computer science and psychology student at Wilfrid Laurier University. I recently was on a gap year to pursue my passion for software development. I have tutored over 25 students in various programming languages, including Python, Java, and JavaScript. I have worked on numerous side-projects and hackathons, where I learned to apply my knowledge to real-world problems.",
 	"projects": [
 		{
 			"title": "Essay Writer Bot",
