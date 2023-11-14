@@ -1,7 +1,7 @@
 {
 	"name": "Yonah Aviv",
-	"headline": "Senior Student at TanenbaumCHAT, Freelance Software Developer, Coding Tutor",
-	"summary": "I am a senior high school student with a deep passion and curiosity for computer science and technology. I am a self‑taught computer programmer with experience in web development and artificial intelligence(including natural language processing). Currently, I am working on using AI to help students for whom it isn’t easy to start written assignments.",
+	"headline": "Computer Science Student at Wilfried Laurier University",
+	"summary": "<ul><li>Currently studying computer science and psychology at Wilfrid Laurier University</li><li>Past computer science tutor and avid software developer recently on a gap year</li><li>Gained 3+ years of coding experience through side projects and hackathonsence in web development and artificial intelligence(including natural language processing). Currently, I am working on using AI to help students for whom it isn’t easy to start written assignments.</li></ul>",
 	"projects": [
 		{
 			"title": "Essay Writer Bot",
