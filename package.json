@@ -26,7 +26,7 @@
       "vite":"^4.5.0"
    },
    "dependencies":{
-      "svelte-feather-icons":"^4.0.1",
+      "svelte-feather-icons":"^4.1.0",
       "@fontsource/inter":"^5.0.15"
    }
 }
