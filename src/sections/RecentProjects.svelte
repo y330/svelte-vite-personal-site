@@ -9,27 +9,27 @@
 	let projects = [
 		{
 			label: 'Essay Writer Bot',
-			date: '2022-01-06',
+			date: 'Jan 06, 2022',
 			desc: "Artifical Intelligence essay writer that uses OpenAI’s GPT‑3 to write long-style essays whose prompts would normally excced the token limit for GPT-3. Github repo: <a href='https://github.com/y330/essaybot/' target='_blank'>Go to project</a>",
 		},
 		{
 			label: 'FragmentQR',
-			date: '2021-09-05',
+			date: 'Sep 25, 2021',
 			desc: "Browser extension that allows for the generation of QR codes linking to arbitrary text on a page.  <a style='color:lightgray' href='#'>Read more</a> <br><a href='https://bit.ly/FQRInstall'>Go to project.</a>",
 		},
 		{
 			label: 'QuickSum',
-			date: '2021-09-25',
+			date: 'Sep 25, 2021',
 			desc: "Quick text summarization tool, with a beautiful UI.  <a style='color:lightgray' href='https://github.com/y330/quicksum'>Read more</a> <br><a href='https://quicksum.vercel.app'>Go to project.</a>",
 		},
 		{
 			label: 'Sveltekit + TailwindCSS Blog on Dystopian Literature',
-			date: '2021-09-25',
+			date: 'Sep 25, 2021',
 			desc: "Blog on various dystopian texts, coded with SvelteKit, tailwind.css with Daisy UI components, and Graph CMS.  <a style='color:lightgray' href='#'>Read more</a><br> <a href='https://yonahs-fst.vercel.app'>Go to Project</a>",
 		},
 		{
 			label: 'Q-Article Audio',
-			date: '2021-08-01',
+			date: 'July 8, 2021',
 			desc: "Chrome extension to let you listen to an article as a podcast in the browser or optionally on your phone by scanning a QR code while in the middle of an article/webpage.  <a style='color:lightgray' href='#'>Read more<a> <br> <a href='https://y330.github.io/q-article-audio'>Go to Project</a>",
 		},
 	]
@@ -53,7 +53,7 @@
 						<b>{proj.label}</b>
 						<code>
 							<Icon icon="tabler:clock" width="10" />
-							{proj.date}}</code
+							Last edited {proj.date}</code
 						>
 					</div>
 					<div>
