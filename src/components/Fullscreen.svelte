@@ -2,7 +2,9 @@
 	import { Button } from 'attractions'
 
 	import { onMount } from 'svelte'
-	import { Maximize2Icon, Minimize2Icon } from 'svelte-feather-icons'
+	import MaximizeIcon from '../icons/MaximizeIcon.svelte'
+	import MinimizeIcon from '../icons/MinimizeIcon.svelte'
+
 
 	// define initial component state
 	let isFull = false
@@ -64,8 +66,8 @@
 	}
 
 	const iconStates = [
-		{ component: Maximize2Icon, props: { size: '16' } },
-		{ component: Minimize2Icon, props: { size: '16' } },
+		{ component: MaximizeIcon },
+		{ component: MinimizeIcon},
 	]
 
 	// the icon name is computed automagically based

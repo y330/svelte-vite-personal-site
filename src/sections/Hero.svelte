@@ -2,7 +2,7 @@
 	import { Subhead, H1, Headline, Button } from 'attractions'
 	import { configStore } from '/stores/configCopyStore'
 	import Typewriter from '../components/Typewriter/Typewriter.svelte'
-	import { ArrowDownIcon } from 'svelte-feather-icons'
+	import Icon from '@iconify/svelte';
 
 	let name
 	let headline
@@ -30,7 +30,7 @@
 		on:click={() => router.push('#summary')}
 	>
 		<a href="#summary" class="button">
-			<ArrowDownIcon size="24" class="down-icon" />
+			<Icon icon="tabler:arrow-down" width="24" class="down-icon" />
 		</a>
 	</Button>
 

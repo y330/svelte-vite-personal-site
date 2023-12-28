@@ -1,6 +1,6 @@
 <script>
 	// Components
-	import { GithubIcon, LinkedinIcon } from 'svelte-feather-icons'
+	import Icon from '@iconify/svelte'
 	import {
 		Dialog,
 		FormField,
@@ -14,8 +14,9 @@
 	let contactForm = {
 		show: false,
 		sendEmails: true,
-		email: '',
-		name: '',
+		subject: '',
+		email: 'avivyonah@gmail.con',
+		name: 'Yonah Aviv',
 	}
 </script>
 
@@ -36,8 +37,8 @@
 		round
 		class="github"
 	>
-		<GithubIcon size="18" /></Button
-	>
+		<Icon icon="tabler:brand-github" color="#ff3e00" width="22" />
+	</Button>
 	<Label>@</Label>
 
 	<Button
@@ -45,24 +46,26 @@
 		round
 		class="linkedin"
 		title="Yonah Aviv on Linkedin"
-		neutral><LinkedinIcon size="18" /></Button
+		neutral
 	>
+		<Icon icon="tabler:brand-linkedin" color="#ff3e00" width="22" />
+	</Button>
 </div>
 {#if contactForm.show}
 	<Modal bind:open={contactForm.show} let:closeCallback>
-		<Dialog title="Are you sure you want to exit?" {closeCallback}>
-			<FormField name="Email" help="i.e. example@gmail.com" required>
-				<TextField />
-			</FormField>
-			<FormField
-				name="Send user emails?"
-				errors={[contactForm.sendEmails && 'Do not send emails']}
-			>
-				<Switch bind:value={contactForm.sendEmails} />
+		<Dialog title="Contact me" {closeCallback}>
+			<FormField name="Subject" help="i.e. Job Offer" required>
+				<TextField bind:value={contactForm.subject} />
 			</FormField>
 
-			<Button on:click={() => (contactForm.show = false)} filled
-				>Submit</Button
+			<Button
+				on:click={() => (
+					(contactForm.show = false),
+					open(
+						'mailto:email@example.com?subject={contactForm.subject}',
+					)
+				)}
+				filled>Send me an email</Button
 			>
 		</Dialog>
 	</Modal>

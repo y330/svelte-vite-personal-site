@@ -1,8 +1,9 @@
 <script>
 	// Components
-	import { H3 } from 'attractions'
+	import { H2 } from 'attractions'
 	import PageTransitions from './PageTransitions.svelte'
 	import Socials from './Socials.svelte'
+	import Typewriter from './Typewriter/Typewriter.svelte'
 	// Utils
 	// import ripple from "attractions/utils/ripple";
 	// import objSelector from "../utils/objSelector";

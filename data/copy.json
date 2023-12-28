@@ -2,11 +2,42 @@
 	"name": "Yonah Aviv",
 	"headline": "Computer Science Student at Wilfried Laurier University",
 	"summary": "I am a computer science and psychology student at Wilfrid Laurier University. I recently was on a gap year to pursue my passion for software development. I have tutored over 25 students in various programming languages, including Python, Java, and JavaScript. I have worked on numerous side-projects and hackathons, where I learned to apply my knowledge to real-world problems.",
+	"recentprojects": [
+		{
+			"label": "Essay Writer Bot",
+			"date": "Jan 6 2022",
+			"desc": "Artifical Intelligence essay writer that uses OpenAI’s GPT‑3 to write long-style essays whose prompts would normally excced the token limit for GPT-3. Github repo: <a href='https://github.com/y330/essaybot/' target='_blank'>Go to project</a>"
+		},
+		{
+			"label": "FragmentQR",
+			"date": "Sep 5 2021",
+			"desc": "Browser extension that allows for the generation of QR codes linking to arbitrary text on a page. <a style='color:lightgray' href='#'>Read more</a> <br><a href='https://bit.ly/FQRInstall'>Go to project.</a>"
+		},
+		{
+			"label": "QuickSum",
+			"date": "Sep 25 2021",
+			"desc": "Quick text summarization tool, with a beautiful UI<a style='color:lightgray' href='https://github.com/y330/quicksum'>Read more</a> <br><a href='https://quicksum.vercel.app'>Go to project.</a>"
+		},
+		{
+			"label": "Sveltekit + TailwindCSS Blog on Dystopian Literature",
+			"date": "Sep 25 2021",
+			"desc": "Blog on various dystopian texts, coded with SvelteKit, tailwind.css with Daisy UI components, and Graph CMS.  <a style='color:lightgray' href='#'>Read more</a><br> <a href='https://yonahs-fst.vercel.app'>Go to Project</a>"
+		},
+		{
+			"label": "Q-Article Audio",
+			"date": "July 1 2021",
+			"desc": "Chrome extension to let you listen to an article as a podcast in the browser or optionally on your phone by scanning a QR code while in the middle of an article/webpage. <a style='color:lightgray' href='#'>Read more<a> <br> <a href='https://y330.github.io/q-article-audio'>Go to Project</a>"
+		}
+	],
 	"projects": [
 		{
 			"title": "Essay Writer Bot",
 			"description": "Artifical Intelligence essay writer that uses OpenAI’s GPT‑3 to write essays for academic and non‑academic purposes. For obvious reasons, I have not made this available publicly. However there is a link to a demo website.",
-			"tech": ["Java", "GPT-3", "Vaadin flow"],
+			"tech": [
+				"Java",
+				"GPT-3",
+				"Vaadin flow"
+			],
 			"url": "https://essaybot.herokuapp.com/home",
 			"imageUrl": "https://github.com/y330/Assets-images-/raw/master/essaybot.png",
 			"videoUrl": "",
@@ -29,27 +60,15 @@
 		{
 			"title": "Svelte Portfolio with GitHub API",
 			"description": "Quick and simple svelte portfolio web app that automatically fetches your github repos and displays them as projects in a responsive grid. Made for a workshop I hosted.",
-			"tech": ["Svelte", "JavaScript", "GitHub API"],
+			"tech": [
+				"Svelte",
+				"JavaScript",
+				"GitHub API"
+			],
 			"url": "https://svelte-portfolio-demo-for-workshop.vercel.app/",
 			"imageUrl": "https://github.com/y330/svelte-portfolio-demo-for-workshop/raw/master/portoflio-example-site-ss.png",
 			"videoUrl": "",
 			"code": "https://github.com/y330/svelte-portfolio-demo-for-workshop"
-		},
-		{
-			"title": "Flask Svelte Heroku starter template",
-			"description": "Flask with Svelte (single page application) frontend starter template , with heroku deployment made easy(no docker)",
-			"tech": [
-				"JavaScript",
-				"Svelte",
-				"Python",
-				"Heroku",
-				"Pipenv",
-				"Flask"
-			],
-			"url": "https://flask-svelte-heroku.herokuapp.com/",
-			"imageUrl": "https://github.com/y330/Flask-Svelte-Heroku-starter/raw/master/flask-svelte-heroku-ss.png",
-			"videoUrl": "",
-			"code": "https://github.com/y330/Flask-Svelte-Heroku-starter"
 		},
 		{
 			"title": "Flask Svelte Heroku starter template",
@@ -115,7 +134,10 @@
 		{
 			"title": "Pydash",
 			"description": "Python implementation of Geometry dash, a rhythm based platformer game, using Pygame, an interactive graphics library for python. Made for a computer science course",
-			"tech": ["Python", "Pygame"],
+			"tech": [
+				"Python",
+				"Pygame"
+			],
 			"url": "https://github.com/y330/Pydash",
 			"imageUrl": "https://camo.githubusercontent.com/ad283c0a0ea6d40cbc320ec72a6f7fcc19331506cfa7209d11120193e1c13e44/68747470733a2f2f6c68332e676f6f676c6575736572636f6e74656e742e636f6d2f70772f414374432d3366714f484d6b6f7042516c5571534635766a6854434c37334470303932573956536e30514973764a3736652d6a6e6c543771456b64765370474748486a575367386f3263485a626c53436c6f4f39584d3135396f45754771656c6d2d50664e72732d633462667741397132536562353374476574754e5572786552505973444b4c6542687741527956494e765a304d4d5473672d6c6e56513d773739362d683539362d6e6f3f61757468757365723d30",
 			"videoUrl": "",
@@ -124,7 +146,11 @@
 		{
 			"title": "FragmentQR",
 			"description": "Browser extension that allows for the generation of QR codes linking to arbitrary text on a page.",
-			"tech": ["JavaScript", "Chrome APIs", "Chrome extension"],
+			"tech": [
+				"JavaScript",
+				"Chrome APIs",
+				"Chrome extension"
+			],
 			"url": "https://chrome.google.com/webstore/detail/fragmentqr/cabodnfakameckfbbgkciiifempglloj",
 			"imageUrl": "https://github.com/y330/FragmentQR/blob/master/fqr-ss.png?raw=true",
 			"videoUrl": ""

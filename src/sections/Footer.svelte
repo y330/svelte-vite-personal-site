@@ -17,7 +17,7 @@
 	<br />
 
 	<b
-		><p color="white">Copyright © 2022 Yonah Aviv. All rights reserved.</p>
+		><p color="white">Copyright © 2023 Yonah Aviv. All rights reserved.</p>
 	</b>
 </div>
 
