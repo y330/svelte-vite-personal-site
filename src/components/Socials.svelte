@@ -7,7 +7,6 @@
 		TextField,
 		Button,
 		Modal,
-		Switch,
 		Label,
 	} from 'attractions'
 
@@ -24,7 +23,7 @@
 	class="contact-btn"
 	on:click={() => {
 		contactForm.show = !contactForm.show
-	}}>Contact me</Button
+	}}><b>Contact me</b></Button
 >
 
 <div class="row">
@@ -106,9 +105,9 @@
 				// width: 6vh;
 				// float: right;
 				// padding: 0.5em;
-				color: white !important;
 
 				& :global(svg) {
+					color: white !important;
 					stroke: white;
 					fill: white;
 				}
